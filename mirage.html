@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assassin's Creed MIRAGE - Photo Mode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(223, 145, 56);
+            color: rgba(19, 17, 17, 0.432);
+        }
+
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+
+        .photo-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 50px 20px;
+        }
+
+        .photo-item {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="test">Assassin's Creed Shadows - Photo Mode</h1>
+    </header>
+
+    <section class="photo-section">
+        <div class="photo-item" data-aos="fade-up" data-aos-delay="200" >
+            <img src="m1.jpeg" alt="Assassin's Creed mirage Scene 1">
+        </div>
+        <div class="photo-item" data-aos="fade-up" data-aos-delay="400">
+            <img src="m2.jpeg" alt="Assassin's Creed mirage Scene 2">
+        </div>
+        <div class="photo-item" data-aos="fade-up" data-aos-delay="600">
+            <img src="m3.jpeg" alt="Assassin's Creed mirage Scene 3">
+        </div>
+        <div class="photo-item" data-aos="fade-up" data-aos-delay="800">
+            <img src="m4.jpeg" alt="Assassin's Creed mirage Scene 4">
+        </div>
+        <div class="photo-item" data-aos="fade-up" data-aos-delay="800">
+            <img src="m5.jpeg" alt="Assassin's Creed mirage Scene 4">
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ubisoft. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            offset: 200,    // Trigger animation 200px before the element is in view
+        });
+    </script>
+</body>
+</html>

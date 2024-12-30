@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Assassin's Creed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 15px 20px;
+            border-bottom: 2px solid #a01919;
+        }
+        header a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #a01919;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .game-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #1a1a1a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 2px solid #a01919;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 15px 5px #a01919;
+        }
+        .game-card img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+        .game-card h2 {
+            margin-top: 10px;
+            color: #a01919;
+        }
+        .game-card p {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .buy-button {
+            padding: 10px 20px;
+            background-color: #a01919;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .buy-button:hover {
+            background-color: #fff;
+            color: #a01919;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="font-size: 1.5rem; font-weight: bold; color: #a01919;">Assassin's Creed Game Store</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="brotherhood.html">Brotherhood</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 style="text-align: center; color: #a01919;">Available Games</h1>
+
+        <!-- Assassin's Creed Shadow -->
+        <div class="game-card">
+            <img src="shadow.jpg" alt="Assassin's Creed Shadow">
+            <h2>Assassin's Creed Shadow</h2>
+            <p>Dive into the shadows and experience the ultimate stealth adventure in Assassin's Creed Shadow.</p>
+            <a href="shadow-buy.html" class="buy-button">Buy Now</a>
+        </div>
+
+        <!-- Assassin's Creed Valhalla -->
+        <div class="game-card">
+            <img src="valhalla.jpg" alt="Assassin's Creed Valhalla">
+            <h2>Assassin's Creed Valhalla</h2>
+            <p>Step into the Viking Age and conquer your destiny in Assassin's Creed Valhalla.</p>
+            <a href="valhalla-buy.html" class="buy-button">Buy Now</a>
+        </div>
+
+        <!-- Assassin's Creed Mirage -->
+        <div class="game-card">
+            <img src="mirage.jpg" alt="Assassin's Creed Mirage">
+            <h2>Assassin's Creed Mirage</h2>
+            <p>Uncover the secrets of a lost world in Assassin's Creed Mirage, a game like no other.</p>
+            <a href="mirage-buy.html" class="buy-button">Buy Now</a>
+        </div>
+    </div>
+
+    <footer style="text-align: center; padding: 20px; background-color: #1a1a1a; color: #777; font-size: 0.9rem; border-top: 2px solid #a01919;">
+        <p>&copy; 2024 Assassin's Creed Game Store. All Rights Reserved.</p>
+        <p><a href="#" style="color: #a01919; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #a01919; text-decoration: none;">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
